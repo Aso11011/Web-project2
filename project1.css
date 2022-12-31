@@ -1,0 +1,926 @@
+
+*{
+   padding: 0;
+   margin: 0;
+ }
+ html{
+   font-size: 10px;
+ }
+ body{
+  font-family: 'Mingzat', sans-serif;
+  background-color: black;
+  color: white;
+ }
+
+ /* ////////////////////////difult color/////////////////////// */
+ :root{
+  --dark-black:#222831;
+  --light-black:#393E46;
+  --light-blue:#00ADB5;
+  --dark-white:#EEEEEE;
+  --light-white:white;
+}
+ /* ///////////////////container//////////////// */
+  .container{
+     width: 100%;
+    margin: auto;
+  }
+  
+
+
+  /* ////////////////////difult style//////////// */
+  a{
+    text-decoration: none;
+  }
+  ul{
+    list-style-type: none;
+  }
+  .m-1{margin: 1rem;}
+  .m-2{margin: 2rem;}
+  .m-3{margin: 3rem;}
+  .m-4{margin: 4rem;}
+
+  .my-1{margin: 0 1rem;}
+  .my-2{margin: 0 2rem;}
+  .my-3{margin: 0 3rem;}
+  .my-4{margin: 0 4rem;}
+
+  .p-1{padding: 1rem;}
+  .p-2{padding: 2rem;}
+  .p-3{padding: 3rem;}
+  .p-4{padding: 4rem;}
+
+  .py-1{padding: 0 1rem;}
+  .py-2{padding: 0 2rem;}
+  .py-3{padding: 0 3rem;}
+  .py-4{padding: 0 4rem;}
+
+  .fz-1{
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+  .fz-12{
+    font-size: 4.8rem;
+    font-weight: bold;
+    line-height: 5.8rem;
+    word-spacing: -1rem;
+  }
+  .fz-3{
+    font-size: 6.8rem;
+    font-weight: bold;
+  }
+  .fz-2{
+    font-size: 3rem;
+    font-family: 'EB Garamond', serif !important;
+    font-weight: 100;
+    word-spacing: 1px;
+  }
+/* //////////////////////header/////////////////////// */
+ 
+
+ 
+
+.menu_nav{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+   top: 0px;
+   z-index: 999;
+   padding: 2.5rem 0px;
+   background-color: black;
+   border-bottom: 1px solid rgba(0, 255, 255, 0.37);
+}
+
+.header{
+  /* width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1 , 1fr);
+  align-items: center; */
+  margin-top: 50px;
+  
+  background: linear-gradient(rgba(0, 0, 0, 0.555),rgba(0, 0, 0, 0.555)), url(./img/475867.jpg) no-repeat center center/cover;
+}
+
+ .logo-bmw{
+   width: 100px;
+   height: 40px;
+ }
+  
+ .navbar{
+  width: 80%;
+  margin: auto;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row-reverse;
+   
+   
+ }
+ .navbar .menu_ul_first{
+   display: flex;
+
+ }
+ .navbar ul li{
+   margin: 0 0.7rem;
+ }
+ .navbar ul li a{
+   display: inline-block;
+   padding: 0 1rem;
+   font-size: 1.6rem;
+   font-weight: bold;
+   color: var(--dark-white);
+    
+ }
+ .navbar ul li a:hover{
+   color: var(--light-blue);
+    
+ }
+ /* ///////////////////////navbar-menu_respansive////////////// */
+ .navbar-btn{
+   font-size: 1.4rem;
+   padding: 0.8rem 0.6rem;
+   display: none;
+   position: fixed;
+   z-index: 99;
+   top: 1.5rem;
+   right: 1.5rem;
+   text-align: center;
+ }
+ .navbar-menu_respansive{
+   width: 200px;
+   height: 90%;
+   background-color: aqua;
+   position: fixed;
+   top:0px;
+   z-index: 9;
+   right: -400px; 
+    transition: all 2s ease-out;
+
+ }
+
+ .navbar-menu_respansive1{
+  /* width: 50%;
+  height: 90%; */
+
+  /* top:0px; */
+  /* z-index: 9; */
+  right: 0px;
+}
+ /* .navbar-menu_respansive .navbar-btn::before{
+  content: '';
+  width: 2.2rem;
+  height: 0.3rem;
+  background-color: red;
+  position: fixed;
+  top: 3rem;
+  right: 4rem;
+}
+.navbar-menu_respansive .navbar-btn::after{
+  content: '';
+  width: 2.2rem;
+  height: 0.3rem;
+  background-color: red;
+  position: fixed;
+  top: 5rem;
+  right: 4rem;
+} */
+
+/* .navbar-menu_respansive {
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  background-color: rgba(17, 63, 71, 0.781);
+  overflow: hidden;
+  border-radius: 50%;
+  top: 2.2rem;
+  right: 3.1rem;
+   display: none;
+} */
+
+ 
+
+
+/* //////////////////////header-contact/////////////////// */
+
+.header-contact{
+  background-color: rgba(255, 255, 255, 0.13);
+  width: 55%;
+  padding: 2rem 0;
+  color: var(--dark-white);
+  text-align: center;
+  border-radius: 4px;
+  transition: all 1.5s;
+  position: relative;
+  top: 10rem;
+}
+.header-contact:hover{
+  background-color: rgba(221, 221, 221, 0.13);
+}
+.header-contact h2{
+  display: inline-block;
+}
+
+.btn{
+  display: inline-block;
+  background-color: var(--dark-white);
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.8rem;
+  margin-top: 2rem;
+  transition: all 1s ease;
+}
+.btn:hover{
+  letter-spacing: 2px;
+  background-color: var(--dark-black);
+  color:var(--light-blue)
+}
+
+ /* ///////////////////section1//////////////// */
+ 
+ .section1-contact{
+   text-align: center;
+   padding-top: 60px;
+   max-width: 560px;
+   margin: auto;
+ }
+ .section1-contact h2{
+   font-weight: bold;
+   font-size: 2.5rem;
+   line-height: 3.8rem;
+   margin: 2rem 0;
+ }
+ .section1-contact p{
+   font-size: 1.4rem;
+   line-height: 2.8rem;
+    word-spacing: -3px;
+    margin-bottom: 1.5rem;
+ }
+ .section1-contact p a{
+   color: #00adef;
+ }
+ .section1-link{
+   background-color: #00adef;
+   border: 1px solid #00adef;
+   font-size: 1.65rem;
+   color: var(--dark-white);
+    word-spacing: -3px;
+    padding: 0 1.3rem;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 1rem 0;
+ }
+ 
+
+
+
+
+ .section1-photo{
+   margin-top: 10rem;
+ }
+ .section1-ul{
+   display: flex;
+   justify-content: center;
+ }
+ .section1-item{
+   width: 25%;
+   margin: 0 1rem;
+ }
+ .section1-img{
+   width: 100%;
+   
+ }
+
+ /* ////////////////////section2///////////////////// */
+ .section2-nav{
+   padding-top: 6rem;
+ }
+ .section2-ul{
+   display: flex;
+   justify-content: center;
+ }
+ .active-li{
+    border-bottom: 1.3px solid #00adef;
+ }
+ .section2-item{
+   display: inline-block;
+   margin: 1rem 2rem;
+   padding: 0.5rem 2rem;
+ }
+ .active{
+   color: #00adef !important;
+ }
+ .section2-link-li{
+   font-size: 1.4rem;
+   font-weight: bold;
+   color: var(--dark-white);
+ }
+
+ /* //////////////////////section3////////////// */
+ .section2-cord{
+   padding: 0.5rem;
+ }
+ .section3-ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 4px;
+ }
+ .section3-ul li{
+   overflow: hidden;
+ }
+  
+ .section3-ul li a img{
+   width: 100%;
+   height: 100%;
+ }
+ .section3-parent{
+   position: relative;
+   
+ }
+ .section3-child{
+   display: block;
+   width: 100%;
+   height: 40px;
+   position: absolute;
+   bottom: 7px;
+   left: 0px;
+   padding: 0.5rem 1.5rem;
+   background-color: rgba(0, 0, 0, 0.315);
+   color: white;
+   transition: all 0.7s;
+ }
+ .section3-child h2{
+   font-size: 1.7rem;
+   font-weight: bold;
+ }
+ .p-show{
+   opacity: 0;
+   transition: all 1s;
+  }
+ .section3-ul li a:hover .section3-child{
+   height: 90px;
+   background-color: rgba(0, 0, 0, 0.589);
+  }
+  .section3-ul li a:hover .p-show{
+    opacity: 1;
+   }
+   .section3-item1{
+     grid-column: 1/span 2;
+     grid-row: 1/span 2;
+   }
+   .section3-item5{
+     grid-column-start: 2;
+     grid-column-end: 4;
+     grid-row-start: 3;
+     grid-row-end: 5;
+   }
+   .div-link{
+     padding: 2.5rem 0;
+     text-align: center;
+   }
+   .div-link a{
+     padding: 0 2rem;
+     background: linear-gradient(#303030,#202020);
+     color: rgb(143, 143, 143);
+     font-size: 1.6rem;
+     border-radius: 2px;
+     transition: color 0.5s;
+   }
+   .div-link a:hover{
+     color: white;
+   }
+   /* ///////////////////////section4//////////// */
+   .section4-span{
+     display: inline-block;
+     margin: 0 1rem;
+     padding: 2rem 0;
+     font-size: 1.3rem;
+   }
+   .section4-span span i{
+     margin-right: 0.7rem;
+     font-size: 2rem;
+   }
+   .section4-div{
+     padding: 0.8rem 0;
+   }
+   .section4-div p{
+     font-size: 1.4rem;
+     word-spacing: -0.75px;
+     line-height: 2.1rem;
+   }
+   .section4-div p a{
+    color: #00adef;
+   }
+   .brandhub-hr {
+    border: 0;
+    height: 1px;
+    margin: 30px -1px;
+    position: relative;
+}
+.brandhub-hr:before {
+  background: #333;
+  content: "";
+  display: block;
+  height: 1px;
+   position: absolute;
+ }
+   .section5-top , 
+   .section5-bottom{
+     display: flex;
+     justify-content: space-between;
+   }
+   .section5-ul li a{
+    color: rgb(187, 187, 187);
+    font-size: 1.2rem;
+    transition: color 0.2s;
+   }
+   .section5-ul li a:hover{
+    color: #00adef;
+   }
+   /* //////////////////////////section5//////////////// */
+   .fa-facebook-square , 
+   .fa-instagram , 
+   .fa-telegram , 
+   .fa-linkedin{
+      color: rgb(187, 187, 187);
+      transition: color 0.4s;
+   }
+   .fa-facebook-square:hover , 
+   .fa-instagram:hover , 
+   .fa-telegram:hover , 
+   .fa-linkedin:hover{
+      color: #00adef;
+   }
+   .section5-bottom-ul ul{
+     display: flex;
+     grid-gap: 6rem;
+   }
+    
+   .section6-bottom-p , 
+   .section6-bottom-ul{
+     padding: 2.5rem 0;
+   }
+ .section6-bottom-p p{
+  color: rgb(187, 187, 187);
+  font-size: 1.4rem;
+  word-spacing: -0.75px;
+  line-height: 2.1rem;
+ }
+ /* //////////////////footer///////////// */
+ footer{
+   padding-top: 1rem;
+ }
+ .footer-top p{
+  color: rgb(187, 187, 187);
+  font-size: 1.2rem;
+  word-spacing: -0.75px;
+  line-height: 2.1rem;
+ }
+ .footer-top p a{
+   color: white;
+   transition: color 0.3s;
+ }
+ .footer-top p a:hover{
+  color: #00adef;
+ }
+ .footer-bottom{
+   display: flex;
+   justify-content: space-between;
+ }
+ .footer-bottom ul{
+   display: flex;
+ }
+ .footer-bottom ul li{
+   margin: 1rem;
+ }
+ .footer-bottom ul li a{
+  color: rgb(187, 187, 187);
+  font-size: 1.2rem;
+  transition: color 0.2s;
+ }
+ .footer-bottom ul li a:hover{
+  color: #00adef;
+ }
+ .footer-top , 
+ .footer-bottom{
+   padding: 2rem 0;
+ }
+ 
+ .menu-right .a1{
+   width: 30px;
+   display: block;
+   padding: 0.65rem 1rem;
+   background: #1f1f1f9f;
+   transition: all .5s ease-in-out;
+   border-radius: 3px;
+   position: fixed;
+   right: 1px;
+   top:250px
+ }
+ .menu-right .a2{
+  width: 30px;
+  display: block;
+  padding: 0.65rem 1rem;
+  background: #1f1f1f9f;
+  transition: all .5s ease-in-out;
+  border-radius: 3px;
+  position: fixed;
+  right: 1px;
+  top:288px
+}
+.menu-right .a3{
+  width: 30px;
+  display: block;
+  padding: 0.65rem 1rem;
+  background: #1f1f1f9f;
+  transition: all .5s ease-in-out;
+  border-radius: 3px;
+  position: fixed;
+  right: 1px;
+  top:326px
+}
+ .menu-right div .a1:hover ,
+ .menu-right div .a2:hover ,
+ .menu-right div .a3:hover{
+   width: 150px;
+ }
+ .menu-right i{
+   color: white;
+ }
+
+
+
+
+
+ /* ////////////////////////project2 styles////////////////////// */
+ .section1_2{
+      width: 100%;
+      height: 550px;
+      margin-top: 100px;
+      padding-top: 1rem;
+
+ }
+ .slidshow{
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+
+ }
+ .slids{
+  width: 100%;
+  height: 100%;
+  position: relative;
+ }
+
+ @keyframes fade{
+   0%{opacity: 0;}
+   100%{opacity: 1;}
+ }
+ .slid{
+  width: 100%;
+  height: 500px;
+  display: none;  
+  position: relative;
+  background-color: blue;
+  animation: fade 1s;
+}
+ .slid img{
+   width: 100%;
+   height: 500px;
+ }
+ .slid div{
+  width: 100%;
+  min-height: 60px;
+  background-color: rgba(0, 255, 255, 0.425);
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  font-size: 25px;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slid div:hover{
+  min-height: 100%;
+  font-size: 30px;
+
+}
+ 
+ .slid.active{
+   display:block;
+
+ }
+  
+ .next , .back{
+   background-color: rgba(0, 0, 0, 0.363);
+   padding: 16px;
+   position: absolute;
+   top: 50%;
+   margin-top: -32px;
+ }
+ .next{
+   right: 0px;
+   border-radius: 5px 0 0 5px;
+}
+ .back{
+   left: 0px;
+   border-radius: 0 5px 5px 0
+  }
+
+  .points{
+    margin-top: 10px;
+    text-align: center;
+    
+  }
+  .points span{
+    width: 17px;
+    height: 17px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .points span.active1{
+    background-color: red;
+  }
+
+ /* /////////////////////respansev////////////////////// */
+
+ @media(max-width:576px){
+  .header{
+    height: 350px !important;
+  }
+    .container{
+      width: 95%;
+    }
+    .logo-bmw{
+      display: none;
+    }
+    .header-contact{
+      margin-top: 1px !important;
+      width: 90% !important;
+    }
+    .header-contact h2{
+      font-size: 25px !important;
+    }
+    .header-contact p{
+      font-size: 19px !important;
+      
+    }
+    .btn{ 
+      font-size: 17px !important;
+      padding: 0.4rem 1.5rem !important; 
+      margin-top: 1.5rem !important;
+    }
+    .section5-top div h2{
+      font-size: 2rem;
+    }
+    .full-scrin{
+      display: none;
+    }
+    /* .navbar-menu_respansive{
+      display: block;
+      width: 25rem;
+      height: 40rem;
+      border-radius: 0px 15px 0px 15px;
+      z-index: 33;
+      top: 0.3rem;
+      right: 0.3rem;
+    } */
+    .navbar-btn{
+      display: block;
+    }
+  .header-bottom{
+    display: flex;
+    justify-content: center;
+  }
+  .section1-ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start !important;
+      
+    
+  }
+  .section1-photo{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+ 
+  .section1-item{
+    width: 46.7% !important;
+    margin: 0 0.4rem !important;
+  }
+
+    .section3-ul{
+      display: flex !important;
+      flex-direction: column !important;
+      grid-gap: 4px;
+  }
+
+  .section5-bottom{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+  }
+
+  .section5-bottom-div{
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.603);
+  }
+
+
+  .section5-bottom-ul ul{
+    grid-gap: 2rem !important;
+    justify-content: center !important;
+  }
+
+   .footer-bottom{
+     flex-direction: column !important;
+   }
+
+   .ul-right ul{
+     flex-direction: row !important;
+     flex-wrap: wrap !important;
+   }
+   
+
+}
+
+
+
+@media(min-width:576px){
+  .container{
+    width: 540px;
+  }
+
+  .header{
+    height: 550px !important;
+  }
+
+  .logo-bmw{
+    display: none;
+  }
+  .full-scrin{
+    display: none;
+  }
+  /* .navbar-menu_respansive{
+    display: block;
+  } */
+  .navbar-btn{
+    display: block;
+  }
+
+  .section3-ul{
+    display: flex !important;
+    flex-direction: column !important;
+    grid-gap: 4px;
+}
+
+
+
+  .section5-bottom-div{
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.603);
+  }
+
+
+  
+  .section5-bottom{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+  }
+
+
+  .section5-bottom-ul ul{
+    grid-gap: 2rem !important;
+    justify-content: center !important;
+  }
+
+   .footer-bottom{
+     flex-direction: column !important;
+   }
+
+   .ul-right ul{
+     flex-direction: row !important;
+     flex-wrap: wrap !important;
+   }
+
+}
+
+
+
+@media(min-width:768px){
+.container{
+    width: 720px;
+}
+.header{
+  height: 550px !important;
+}
+
+
+.logo-bmw{
+  display: block !important;
+}
+.full-scrin{
+  display: block !important;
+}
+.navbar-btn{
+  display: none;
+}
+.navbar-menu_respansive{
+  display: none !important;
+}
+
+
+    .section3-ul{
+      display: grid !important;
+      grid-template-columns: repeat(2,1fr) !important;
+      grid-gap: 4px;
+  }
+
+  .section3-item1{
+    grid-column: 1/span 1 !important;
+    grid-row: 1/span 1 !important;
+  }
+  .section3-item5{
+    grid-column-start: 2 !important;
+    grid-column-end: 2 !important;
+    grid-row-start: 3 !important;
+    grid-row-end: 3 !important;
+   /* grid-column: 2/span 3; */
+   /* grid-row: 1/span 2; */
+  }
+
+
+  .section5-bottom{
+    display: grid !important;
+    grid-template-columns: repeat(2,1fr) !important;
+    
+  }
+
+}
+
+
+
+@media(min-width:992px){
+.container{
+    width: 960px;
+}
+
+.header{
+  height: 580px !important;
+}
+
+
+.section3-ul{
+   
+  grid-template-columns: repeat(3,1fr) !important;
+  
+}
+
+.section3-item1{
+grid-column: 1/span 2 !important;
+grid-row: 1/span 2 !important;
+}
+.section3-item5{
+grid-column-start: 2 !important;
+grid-column-end: 4 !important;
+grid-row-start: 3 !important;
+grid-row-end: 5 !important;
+}
+
+.section5-bottom{
+display: flex !important;
+flex-direction: row !important;
+justify-content: space-between !important;
+}
+
+}
+
+
+
+@media(min-width:1200px){
+.container{
+    width: 1140px;
+}
+.header{
+  height: 690px !important;
+}
+}
+
+
+
+@media(min-width:1400px){
+.container{
+    width: 1360px;
+}
+ 
+}
+
+
+ 
+ 
